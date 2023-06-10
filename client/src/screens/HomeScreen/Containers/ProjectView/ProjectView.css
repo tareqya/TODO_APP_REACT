@@ -1,0 +1,54 @@
+.ProjectView {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+}
+
+.ProjectView .Container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+
+.ProjectView .removeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(253, 229, 230);
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+}
+
+.ProjectView .divider {
+  width: 100%;
+  border-top: 2px solid rgb(239, 230, 230);
+  border-radius: 2px;
+}
+
+.ProjectView .Container > h4 {
+  margin-top: 20px;
+}
+
+.ProjectView .addTaskBtn {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ProjectView .addTaskBtn > span {
+  color: var(--lightText);
+}
+
+.ProjectView .removeTaskBtn {
+  cursor: pointer;
+}

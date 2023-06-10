@@ -1,0 +1,24 @@
+.DashboardScreen {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.DashboardScreen .divider {
+  width: 100%;
+  border-top: 2px solid rgb(239, 230, 230);
+  border-radius: 2px;
+}
+
+.DashboardScreen .projectsWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.DashboardScreen h1 {
+  color: var(--secondary);
+  margin-left: 10px;
+}

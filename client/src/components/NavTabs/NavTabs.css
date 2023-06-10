@@ -1,0 +1,92 @@
+.NavTabs {
+  display: block;
+  padding: 0px 10px;
+  height: 100vh;
+  min-width: 200px;
+  border-right: 2px solid rgb(245, 245, 245);
+}
+
+.NavTabs .TitleWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.NavTabs .TitleWrapper > div {
+  height: 10px;
+  width: 10px;
+  border: 2px solid var(--secondary);
+  border-radius: 5px;
+}
+
+.NavTabs .TitleWrapper > h2 {
+  color: var(--secondary);
+}
+
+.NavTabs .NavLinksWrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+
+.NavTabs .NavLinksWrapper > div {
+  margin: 5px 0px;
+}
+
+.NavTabs .NavLinksWrapper div a {
+  text-decoration: none;
+  color: var(--lightText);
+}
+
+.NavTabs .NavLinksWrapper .select {
+  display: flex;
+  padding: 10px 20px;
+  background-color: rgb(235, 245, 254);
+  border-radius: 5px;
+}
+
+.NavTabs .NavLinksWrapper .select > a {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.NavTabs .NavMobileLinksWrapper {
+  display: none;
+}
+
+.NavTabs .AddProjectBtn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary);
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  bottom: 50px;
+  left: 150px;
+}
+
+.NavTabs .AddProjectBtn:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 600px) {
+  .NavTabs {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+  }
+
+  .NavTabs .NavLinksWrapper {
+    display: none;
+  }
+
+  .NavTabs .NavMobileLinksWrapper {
+    display: block;
+  }
+}
